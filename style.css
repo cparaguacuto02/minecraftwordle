@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('minecraft-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-title {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tile {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #5a5a5a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Colors for the tiles */
+.correct {
+    background-color: #538d4e; /* green */
+    border-color: #538d4e;
+}
+
+.present {
+    background-color: #b59f3b; /* yellow */
+    border-color: #b59f3b;
+}
+
+.absent {
+    background-color: #3a3a3c; /* grey */
+    border-color: #3a3a3c;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 250px;
+    text-align: center;
+    background-color: #1a1a1b;
+    border: 2px solid #3a3a3c;
+    color: #fff;
+}
+
+#submit-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #818384;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+}
